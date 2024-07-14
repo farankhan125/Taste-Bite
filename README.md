@@ -1,2 +1,2 @@
 # Taste-Bite
-A restaurant website
+A Restaurant Website
