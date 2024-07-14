@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #2A5B84;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.mob-menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #EBC137;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.7s ease-in-out;
+}
+
+.mob-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2A5B84;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.cross-svg {
+    margin: 35px 40px 0 0;
+    align-self: end;
+}
+
+.top {
+    height: 678px;
+    background-color: #EBC137;
+    padding: 50px 100px;
+    border-bottom-left-radius: 200% 120%;
+    border-bottom-right-radius: 200% 120%;
+}
+
+nav {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo>img {
+    width: 110px;
+}
+
+.menu {
+    display: flex;
+    gap: 55px;
+}
+
+.menu>a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2A5B84;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+.order-now{
+    width: 91%;
+    background-color: #2A5B84;
+    color: #EBC137;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.main {
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/*  */
+
+.burgers {
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.burgers-text {
+    color: #2A5B84;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.burgers-text>h1 {
+    margin-left: -4px;
+    font-size: 35px;
+}
+
+.burgers-text>p {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 2;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.burgers-img>img {
+    width: 400px;
+}
+
+/*  */
+
+.mid {
+    padding: 0 100px;
+}
+
+.pizzas {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pizzas-text {
+    color: #EBC137;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pizzas-text>h1 {
+    margin-left: -4px;
+    font-size: 35px;
+}
+
+.pizzas-text>p {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 2;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.pizzas-img>img {
+    width: 400px;
+}
+
+/*  */
+
+.steaks {
+    margin-top: 110px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.steaks-text {
+    color: #EBC137;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.steaks-text>h1 {
+    margin-left: -4px;
+    font-size: 35px;
+}
+
+.steaks-text>p {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 2;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.steaks-img>img {
+    width: 400px;
+}
+
+/*  */
+
+footer {
+    padding: 30px 100px;
+    background-color: #EBC137;
+    display: flex;
+    gap: 60px;
+}
+
+.order{
+    width: 50%;
+}
+
+.order>h1 {
+    margin-bottom: 30px;
+    color: #2A5B84;
+}
+
+#what-to-order {
+    width: 91%;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #EBC137;
+    border: solid #2A5B84 2px;
+    color: #2A5B84;
+    font-family: 'Julius Sans One', sans-serif;
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+
+input {
+    width: 91%;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #EBC137;
+    border: solid #2A5B84 2px;
+    color: #2A5B84;
+    font-family: 'Julius Sans One', sans-serif;
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+
+.fn-ln {
+    width: 45%;
+}
+
+.sperator {
+    width: 0px;
+    border: solid #2A5B84 1px;
+}
+
+.right-foot {
+    color: #2A5B84;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact>h1 {
+    margin-bottom: 10px;
+}
+
+.svgs {
+    display: flex;
+    gap: 20px;
+}
+
+.fb g, .insta g, .twit g {
+    transition: 0.1s ease-in-out;
+}
+
+.locations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.locations>h1 {
+    margin-bottom: 10px;
+}
+
+.cr {
+    padding-bottom: 15px;
+    background-color: #EBC137;
+    color: #2A5B84;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* PSEUDO SYSTEM BELOW */
+
+.logo {
+    cursor: pointer;
+}
+
+.menu>a:hover, .mob-menu a:hover {
+    background-color: #2A5B84;
+    color: #EBC137;
+}
+
+.order-now:hover {
+    background-color: #1b3a54;
+    cursor: pointer;
+}
+
+.fb:hover g, .insta:hover g, .twit:hover g {
+    fill: #1b3a54;
+    cursor: pointer;
+}
+
+.insta:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    border: 2px solid #1671be;
+}
+
+#what-to-order:focus {
+    border: 2px solid #1671be;   
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1440px) {
+    .menu {
+        gap: 45px;
+    }
+}
+
+@media (max-width: 1320px) {
+    .top {
+        height: 710px;
+    }
+
+    .menu {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .top {
+        height: 937px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav>.button {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .menu-icon>.button {
+        margin: 7px 15px 0 0;
+    }
+
+    .burgers {
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .burgers-img, .pizzas-img {
+        order: 1;
+    }
+
+    .burgers-text, .pizzas-text {
+        width: 100%;
+        order: 2;
+    }
+
+    .burgers-text>h1, .pizzas-text>h1, .steaks-text>h1 {
+        text-align: center;
+    }
+
+    .pizzas, .steaks {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .steaks {
+        margin-top: 80px;
+    }
+
+    .steaks-img {
+        order: 1;
+    }
+
+    .steaks-text {
+        width: 100%;
+        order: 2;
+    }
+}
+
+@media (max-width: 900px) {
+    .top {
+        border-bottom-left-radius: 200% 80%;
+        border-bottom-right-radius: 200% 80%;
+    }
+
+    .sperator {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .order {
+        width: 100%;
+    }
+
+    .order>h1 {
+        text-align: center;
+    }
+
+    #what-to-order, input, .order-now {
+        width: 100%;
+    }
+
+    .fn-ln {
+        width: 49.5%;
+    }
+
+    .right-foot {
+        margin-bottom: 15px;
+        text-align: center;
+        gap: 60px;
+    }
+
+    .svgs {
+        align-self: center;
+    }
+}
+
+@media (max-width: 775px) {
+    .top {
+        height: 986px;
+        border-bottom-left-radius: 200% 60%;
+        border-bottom-right-radius: 200% 60%;
+    }
+
+    .fn-ln {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .top {
+        padding: 35px 50px;
+        height: 955px;
+        border-bottom-left-radius: 200% 50%;
+        border-bottom-right-radius: 200% 50%;
+    }
+
+    .mid {
+        padding: 0 50px;
+    }
+
+    footer {
+        padding: 30px 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    .top {
+        padding: 30px 40px;
+        height: 986px;
+        border-bottom-left-radius: 200% 40%;
+        border-bottom-right-radius: 200% 40%;
+    }
+
+    .mid {
+        padding: 0 40px;
+    }
+
+    footer {
+        padding: 30px 40px;
+    }
+
+    .menu-icon>.button {
+        display: none;
+    }
+
+    .logo>img {
+        width: 80px;
+    }
+
+    .burgers-img>img, .pizzas-img>img, .steaks-img>img {
+        width: 100%;
+    }
+}
+
+
+/* ABOUT PAGE CSS BELOW */
+
+.content {
+    margin-top: 70px;
+    color: #2A5B84;
+    text-align: center;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.content>h1 {
+    font-size: 35px;
+}
+
+.content>p {
+    font-size: 25px;
+}
