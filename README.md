@@ -15,7 +15,7 @@ TasteBite is a modern, responsive restaurant website.
 
 Jump right in and experience TasteBite yourself:
 
-[Visit TasteBite Live Site](https://farankhan125.github.io/Taste-Bite/)
+[Visit TasteBite](https://farankhan125.github.io/Taste-Bite/)
 
 ---
 
